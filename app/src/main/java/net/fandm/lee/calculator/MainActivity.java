@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
-import org.mozilla.javascript.Context;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         Button enter=(Button)findViewById(R.id.enter);
         Button clear=(Button)findViewById(R.id.clear);
         Button decimal=(Button)findViewById(R.id.decimal);
+        Button left_parenth=(Button)findViewById(R.id.left_parenth);
+        Button right_parenth=(Button)findViewById(R.id.right_parenth);
+
 
         b1.setOnClickListener(new calcOnClickListener());
         b2.setOnClickListener(new calcOnClickListener());
@@ -50,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         enter.setOnClickListener(new calcOnClickListener());
         clear.setOnClickListener(new calcOnClickListener());
         decimal.setOnClickListener(new calcOnClickListener());
+        left_parenth.setOnClickListener(new calcOnClickListener());
+        right_parenth.setOnClickListener(new calcOnClickListener());
 
 
 
